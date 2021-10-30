@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.m */; };
+		00E356F31AD99517003FC87E /* SubredditsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SubredditsTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		6172F2D35A4C3AA820D92908 /* libPods-SubredditsAppTemplateNamespace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-SubredditsAppTemplateNamespace.a */; };
-		7EF68E3733C33B6898317E18 /* libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a */; };
+		6172F2D35A4C3AA820D92908 /* libPods-Subreddits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-Subreddits.a */; };
+		7EF68E3733C33B6898317E18 /* libPods-Subreddits-SubredditsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-Subreddits-SubredditsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = SubredditsAppTemplateNamespace;
+			remoteInfo = Subreddits;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubredditsAppTemplateNamespaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* SubredditsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubredditsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubredditsAppTemplateNamespaceTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* SubredditsAppTemplateNamespace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubredditsAppTemplateNamespace.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SubredditsAppTemplateNamespace/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SubredditsAppTemplateNamespace/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SubredditsAppTemplateNamespace/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SubredditsAppTemplateNamespace/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SubredditsAppTemplateNamespace/main.m; sourceTree = "<group>"; };
-		1D0AE47A65C8663E3B452821 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.release.xcconfig"; path = "Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.release.xcconfig"; sourceTree = "<group>"; };
-		6423831EA8574132BED9D8CC /* libPods-SubredditsAppTemplateNamespace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SubredditsAppTemplateNamespace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C97AB639B58BBB4B15BBE30 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.debug.xcconfig"; path = "Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SubredditsAppTemplateNamespace/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABFE59519B596E51CEFDCCC0 /* libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A881CF5CF3F2B244570E2A /* Pods-SubredditsAppTemplateNamespace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubredditsAppTemplateNamespace.debug.xcconfig"; path = "Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace.debug.xcconfig"; sourceTree = "<group>"; };
-		D00AAFFCFCFDA5787532823F /* Pods-SubredditsAppTemplateNamespace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubredditsAppTemplateNamespace.release.xcconfig"; path = "Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* SubredditsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubredditsTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Subreddits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subreddits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Subreddits/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Subreddits/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Subreddits/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Subreddits/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Subreddits/main.m; sourceTree = "<group>"; };
+		1D0AE47A65C8663E3B452821 /* Pods-Subreddits-SubredditsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subreddits-SubredditsTests.release.xcconfig"; path = "Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests.release.xcconfig"; sourceTree = "<group>"; };
+		6423831EA8574132BED9D8CC /* libPods-Subreddits.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Subreddits.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C97AB639B58BBB4B15BBE30 /* Pods-Subreddits-SubredditsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subreddits-SubredditsTests.debug.xcconfig"; path = "Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Subreddits/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABFE59519B596E51CEFDCCC0 /* libPods-Subreddits-SubredditsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Subreddits-SubredditsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A881CF5CF3F2B244570E2A /* Pods-Subreddits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subreddits.debug.xcconfig"; path = "Target Support Files/Pods-Subreddits/Pods-Subreddits.debug.xcconfig"; sourceTree = "<group>"; };
+		D00AAFFCFCFDA5787532823F /* Pods-Subreddits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subreddits.release.xcconfig"; path = "Target Support Files/Pods-Subreddits/Pods-Subreddits.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF68E3733C33B6898317E18 /* libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a in Frameworks */,
+				7EF68E3733C33B6898317E18 /* libPods-Subreddits-SubredditsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6172F2D35A4C3AA820D92908 /* libPods-SubredditsAppTemplateNamespace.a in Frameworks */,
+				6172F2D35A4C3AA820D92908 /* libPods-Subreddits.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests */ = {
+		00E356EF1AD99517003FC87E /* SubredditsTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.m */,
+				00E356F21AD99517003FC87E /* SubredditsTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = SubredditsAppTemplateNamespaceTests;
+			path = SubredditsTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* SubredditsAppTemplateNamespace */ = {
+		13B07FAE1A68108700A75B9A /* Subreddits */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = SubredditsAppTemplateNamespace;
+			name = Subreddits;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6423831EA8574132BED9D8CC /* libPods-SubredditsAppTemplateNamespace.a */,
-				ABFE59519B596E51CEFDCCC0 /* libPods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.a */,
+				6423831EA8574132BED9D8CC /* libPods-Subreddits.a */,
+				ABFE59519B596E51CEFDCCC0 /* libPods-Subreddits-SubredditsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* SubredditsAppTemplateNamespace */,
+				13B07FAE1A68108700A75B9A /* Subreddits */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests */,
+				00E356EF1AD99517003FC87E /* SubredditsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -131,8 +131,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* SubredditsAppTemplateNamespace.app */,
-				00E356EE1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Subreddits.app */,
+				00E356EE1AD99517003FC87E /* SubredditsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0A881CF5CF3F2B244570E2A /* Pods-SubredditsAppTemplateNamespace.debug.xcconfig */,
-				D00AAFFCFCFDA5787532823F /* Pods-SubredditsAppTemplateNamespace.release.xcconfig */,
-				6C97AB639B58BBB4B15BBE30 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.debug.xcconfig */,
-				1D0AE47A65C8663E3B452821 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.release.xcconfig */,
+				C0A881CF5CF3F2B244570E2A /* Pods-Subreddits.debug.xcconfig */,
+				D00AAFFCFCFDA5787532823F /* Pods-Subreddits.release.xcconfig */,
+				6C97AB639B58BBB4B15BBE30 /* Pods-Subreddits-SubredditsTests.debug.xcconfig */,
+				1D0AE47A65C8663E3B452821 /* Pods-Subreddits-SubredditsTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests */ = {
+		00E356ED1AD99517003FC87E /* SubredditsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SubredditsAppTemplateNamespaceTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SubredditsTests" */;
 			buildPhases = (
 				A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = SubredditsAppTemplateNamespaceTests;
-			productName = SubredditsAppTemplateNamespaceTests;
-			productReference = 00E356EE1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.xctest */;
+			name = SubredditsTests;
+			productName = SubredditsTests;
+			productReference = 00E356EE1AD99517003FC87E /* SubredditsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* SubredditsAppTemplateNamespace */ = {
+		13B07F861A680F5B00A75B9A /* Subreddits */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SubredditsAppTemplateNamespace" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Subreddits" */;
 			buildPhases = (
 				3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = SubredditsAppTemplateNamespace;
-			productName = SubredditsAppTemplateNamespace;
-			productReference = 13B07F961A680F5B00A75B9A /* SubredditsAppTemplateNamespace.app */;
+			name = Subreddits;
+			productName = Subreddits;
+			productReference = 13B07F961A680F5B00A75B9A /* Subreddits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SubredditsAppTemplateNamespace" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Subreddits" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* SubredditsAppTemplateNamespace */,
-				00E356ED1AD99517003FC87E /* SubredditsAppTemplateNamespaceTests */,
+				13B07F861A680F5B00A75B9A /* Subreddits */,
+				00E356ED1AD99517003FC87E /* SubredditsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,15 +271,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */ = {
@@ -297,7 +297,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SubredditsAppTemplateNamespace-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Subreddits-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -310,15 +310,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subreddits-SubredditsTests/Pods-Subreddits-SubredditsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */ = {
@@ -336,7 +336,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Subreddits-SubredditsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,15 +349,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */ = {
@@ -366,15 +366,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubredditsAppTemplateNamespace/Pods-SubredditsAppTemplateNamespace-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subreddits/Pods-Subreddits-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* SubredditsAppTemplateNamespaceTests.m in Sources */,
+				00E356F31AD99517003FC87E /* SubredditsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* SubredditsAppTemplateNamespace */;
+			target = 13B07F861A680F5B00A75B9A /* Subreddits */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,14 +429,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.debug.xcconfig */;
+			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-Subreddits-SubredditsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SubredditsAppTemplateNamespaceTests/Info.plist;
+				INFOPLIST_FILE = SubredditsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,19 +448,19 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armenio.subreddits.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubredditsAppTemplateNamespace.app/SubredditsAppTemplateNamespace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subreddits.app/Subreddits";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-SubredditsAppTemplateNamespace-SubredditsAppTemplateNamespaceTests.release.xcconfig */;
+			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-Subreddits-SubredditsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = SubredditsAppTemplateNamespaceTests/Info.plist;
+				INFOPLIST_FILE = SubredditsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,21 +472,21 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armenio.subreddits.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubredditsAppTemplateNamespace.app/SubredditsAppTemplateNamespace";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subreddits.app/Subreddits";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-SubredditsAppTemplateNamespace.debug.xcconfig */;
+			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-Subreddits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SubredditsAppTemplateNamespace/Info.plist;
+				INFOPLIST_FILE = Subreddits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,8 +496,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = SubredditsAppTemplateNamespace;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armenio.subreddits.app.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Subreddits;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -506,12 +506,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-SubredditsAppTemplateNamespace.release.xcconfig */;
+			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-Subreddits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = SubredditsAppTemplateNamespace/Info.plist;
+				INFOPLIST_FILE = Subreddits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,8 +521,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = SubredditsAppTemplateNamespace;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armenio.subreddits.app.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Subreddits;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -656,7 +656,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SubredditsAppTemplateNamespaceTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SubredditsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SubredditsAppTemplateNamespace" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Subreddits" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -674,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SubredditsAppTemplateNamespace" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Subreddits" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

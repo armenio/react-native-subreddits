@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface SubredditsAppTemplateNamespaceTests : XCTestCase
+@interface SubredditsTests : XCTestCase
 
 @end
 
-@implementation SubredditsAppTemplateNamespaceTests
+@implementation SubredditsTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
