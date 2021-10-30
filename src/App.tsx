@@ -24,8 +24,8 @@ const ReadStackScreen = (props: any) => {
                 headerBackTitleVisible: false,
             }}
         >
-            <ReadStack.Screen options={{ headerShown: false }} name="ReadIndexScreen" component={ReadIndexScreen} initialParams={{ ...props.route.params }} />
-            <ReadStack.Screen options={{ headerTitle: "View" }} name="ReadShowScreen" component={ReadShowScreen} />
+            <ReadStack.Screen options={{ headerTitle: 'r/pics' }} name="ReadIndexScreen" component={ReadIndexScreen} initialParams={{ ...props.route.params }} />
+            <ReadStack.Screen options={{ headerTitle: "View Details" }} name="ReadShowScreen" component={ReadShowScreen} />
         </ReadStack.Navigator>
     );
 };
@@ -34,13 +34,14 @@ const Tab = createBottomTabNavigator();
 const TabScreen = (props: any) => {
     return (
         <Tab.Navigator
-            initialRouteName="NewTab"
+            initialRouteName="TopTab"
             screenOptions={({ route }) => ({
                 tabBarActiveTintColor: "#ff4500",
                 tabBarInactiveTintColor: '#787878',
                 style: {
                     backgroundColor: '#ffffff',
                 },
+                headerShown: false
             })}
         >
             <Tab.Screen
@@ -63,7 +64,7 @@ const TabScreen = (props: any) => {
                     title: 'New',
                     tabBarIcon: ({ color, size }) => (
                         <SimpleLineIcons name="clock" color={color} size={size} />
-                    ),
+                    )
                 }}
                 initialParams={{
                     type: 'new'

@@ -8,6 +8,6 @@
     <ImageView 
         android:layout_width="170dp" 
         android:layout_height="170dp" 
-        android:src="@mipmap/splash_screen" 
+        android:src="@mipmap/splash" 
         android:scaleType="centerCrop" />
 </RelativeLayout>
