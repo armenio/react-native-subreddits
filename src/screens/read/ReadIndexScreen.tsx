@@ -173,7 +173,6 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
 
     render() {
         return (
-
             <NetworkStatus>
                 <Box style={{
                     flex: 1
@@ -308,7 +307,7 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
                                 );
                             }}
                             onEndReached={({ distanceFromEnd }) => !this.state.isLoadingMore && this.loadMore()}
-                            onEndReachedThreshold={.3}
+                            onEndReachedThreshold={.1}
                             scrollEventThrottle={150}
                             ListFooterComponent={
                                 <Box style={{ flex: 1 }}>
