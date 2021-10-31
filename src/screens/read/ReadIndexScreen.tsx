@@ -13,6 +13,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Entypo from 'react-native-vector-icons/Entypo';
 
 import Loader from '../../components/Loader';
+import NetworkStatus from '../../components/NetworkStatus';
 
 type ReadIndexProps = {
     route: Route<string, object> & {
@@ -172,153 +173,156 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
 
     render() {
         return (
-            <Box style={{
-                flex: 1
-            }}>
-                {this.state.isLoading ? (
-                    <Loader isLoading={this.state.isLoading} />
-                ) : (
-                    <FlatList
-                        contentContainerStyle={{ paddingBottom: 20 }}
-                        data={this.state.result?.data?.children}
-                        refreshControl={
-                            <RefreshControl
-                                refreshing={this.state.isRefreshing}
-                                onRefresh={this.onRefresh}
-                                tintColor="#ff4500"
-                            />
-                        }
 
-                        showsVerticalScrollIndicator={true}
-                        renderItem={(e) => {
+            <NetworkStatus>
+                <Box style={{
+                    flex: 1
+                }}>
+                    {this.state.isLoading ? (
+                        <Loader isLoading={this.state.isLoading} />
+                    ) : (
+                        <FlatList
+                            contentContainerStyle={{ paddingBottom: 20 }}
+                            data={this.state.result?.data?.children}
+                            refreshControl={
+                                <RefreshControl
+                                    refreshing={this.state.isRefreshing}
+                                    onRefresh={this.onRefresh}
+                                    tintColor="#ff4500"
+                                />
+                            }
 
-                            const item: RedditItem = e.item.data;
+                            showsVerticalScrollIndicator={true}
+                            renderItem={(e) => {
 
-                            return (
-                                <TouchableOpacity
-                                    activeOpacity={.7}
-                                    onPress={() => {
-                                        this.props.navigation.navigate('ReadShowScreen', {
-                                            id: item.id,
-                                            url: item.url
-                                        });
-                                    }}
-                                >
-                                    <Box
-                                        key={`${this.state.type}-${item.id}`}
-                                        borderBottomWidth="1"
-                                        _dark={{
-                                            borderColor: "gray.600",
+                                const item: RedditItem = e.item.data;
+
+                                return (
+                                    <TouchableOpacity
+                                        activeOpacity={.7}
+                                        onPress={() => {
+                                            this.props.navigation.navigate('ReadShowScreen', {
+                                                id: item.id,
+                                                url: item.url
+                                            });
                                         }}
-                                        borderColor="coolGray.200"
-                                        pl="4"
-                                        pr="5"
-                                        py="4"
                                     >
-                                        <HStack space={3} justifyContent="space-between">
-                                            {!!item?.thumbnail && item?.thumbnail.length > 20 && (
-                                                <Image
-                                                    rounded='sm'
-                                                    size="48px"
-                                                    source={{
-                                                        uri: item.thumbnail,
-                                                    }}
-                                                    alt="Thumb"
-                                                />
-                                            )}
-                                            <VStack justifyContent="space-between" style={{
-                                                flex: 1
-                                            }}>
-                                                <Text
-                                                    _dark={{
-                                                        color: "warmGray.50",
-                                                    }}
-                                                    color="coolGray.800"
-                                                    bold
-                                                    fontSize={13}
-                                                >
-                                                    {item.title.substring(0, 75)}
-                                                    {item.title.length > 75 && '...'}
-                                                </Text>
-                                                <HStack alignItems="flex-end" justifyContent="space-between" mt="1">
-                                                    <VStack justifyContent="space-between">
-                                                        <HStack alignItems="center">
-                                                            <Entypo name="user" size={12} color="gray" />
-                                                            <Text
-                                                                color="coolGray.600"
-                                                                _dark={{
-                                                                    color: "warmGray.200",
-                                                                }}
-                                                                fontSize={12}
-                                                                ml="1"
-                                                            >
-                                                                {item.author}
-                                                            </Text>
-                                                        </HStack>
-                                                        <HStack alignItems="center">
-                                                            <Entypo name="clock" size={10} color="gray" />
-                                                            <Text
-                                                                color="coolGray.600"
-                                                                _dark={{
-                                                                    color: "warmGray.200",
-                                                                }}
-                                                                fontSize={12}
-                                                                ml="1"
-                                                            >
-                                                                {moment.unix(item.created).fromNow()}
-                                                            </Text>
-                                                        </HStack>
-                                                    </VStack>
-                                                    <HStack>
-                                                        <HStack alignItems="center" ml="2">
-                                                            <Entypo name="star" size={12} color="orange" />
-                                                            <Text
-                                                                color="coolGray.600"
-                                                                _dark={{
-                                                                    color: "warmGray.200",
-                                                                }}
-                                                                fontSize={12}
-                                                                ml="1"
-                                                            >
-                                                                {this.abbreviateNumber(item.score)}
-                                                            </Text>
-                                                        </HStack>
-                                                        <HStack alignItems="center" ml="2">
-                                                            <Entypo name="chat" size={12} color="green" />
-                                                            <Text
-                                                                color="coolGray.600"
-                                                                _dark={{
-                                                                    color: "warmGray.200",
-                                                                }}
-                                                                fontSize={12}
-                                                                ml="1"
-                                                            >
-                                                                {this.abbreviateNumber(item.num_comments)}
-                                                            </Text>
+                                        <Box
+                                            key={`${this.state.type}-${item.id}`}
+                                            borderBottomWidth="1"
+                                            _dark={{
+                                                borderColor: "gray.600",
+                                            }}
+                                            borderColor="coolGray.200"
+                                            pl="4"
+                                            pr="5"
+                                            py="4"
+                                        >
+                                            <HStack space={3} justifyContent="space-between">
+                                                {!!item?.thumbnail && item?.thumbnail.length > 20 && (
+                                                    <Image
+                                                        rounded='sm'
+                                                        size="48px"
+                                                        source={{
+                                                            uri: item.thumbnail,
+                                                        }}
+                                                        alt="Thumb"
+                                                    />
+                                                )}
+                                                <VStack justifyContent="space-between" style={{
+                                                    flex: 1
+                                                }}>
+                                                    <Text
+                                                        _dark={{
+                                                            color: "warmGray.50",
+                                                        }}
+                                                        color="coolGray.800"
+                                                        bold
+                                                        fontSize={13}
+                                                    >
+                                                        {item.title.substring(0, 75)}
+                                                        {item.title.length > 75 && '...'}
+                                                    </Text>
+                                                    <HStack alignItems="flex-end" justifyContent="space-between" mt="1">
+                                                        <VStack justifyContent="space-between">
+                                                            <HStack alignItems="center">
+                                                                <Entypo name="user" size={12} color="gray" />
+                                                                <Text
+                                                                    color="coolGray.600"
+                                                                    _dark={{
+                                                                        color: "warmGray.200",
+                                                                    }}
+                                                                    fontSize={12}
+                                                                    ml="1"
+                                                                >
+                                                                    {item.author}
+                                                                </Text>
+                                                            </HStack>
+                                                            <HStack alignItems="center">
+                                                                <Entypo name="clock" size={10} color="gray" />
+                                                                <Text
+                                                                    color="coolGray.600"
+                                                                    _dark={{
+                                                                        color: "warmGray.200",
+                                                                    }}
+                                                                    fontSize={12}
+                                                                    ml="1"
+                                                                >
+                                                                    {moment.unix(item.created).fromNow()}
+                                                                </Text>
+                                                            </HStack>
+                                                        </VStack>
+                                                        <HStack>
+                                                            <HStack alignItems="center" ml="2">
+                                                                <Entypo name="star" size={12} color="orange" />
+                                                                <Text
+                                                                    color="coolGray.600"
+                                                                    _dark={{
+                                                                        color: "warmGray.200",
+                                                                    }}
+                                                                    fontSize={12}
+                                                                    ml="1"
+                                                                >
+                                                                    {this.abbreviateNumber(item.score)}
+                                                                </Text>
+                                                            </HStack>
+                                                            <HStack alignItems="center" ml="2">
+                                                                <Entypo name="chat" size={12} color="green" />
+                                                                <Text
+                                                                    color="coolGray.600"
+                                                                    _dark={{
+                                                                        color: "warmGray.200",
+                                                                    }}
+                                                                    fontSize={12}
+                                                                    ml="1"
+                                                                >
+                                                                    {this.abbreviateNumber(item.num_comments)}
+                                                                </Text>
+                                                            </HStack>
                                                         </HStack>
                                                     </HStack>
-                                                </HStack>
-                                            </VStack>
-                                        </HStack>
-                                    </Box>
-                                </TouchableOpacity>
-                            );
-                        }}
-                        onEndReached={({ distanceFromEnd }) => !this.state.isLoadingMore && this.loadMore()}
-                        onEndReachedThreshold={.3}
-                        scrollEventThrottle={150}
-                        ListFooterComponent={
-                            <Box style={{ flex: 1 }}>
-                                {this.state.isLoadingMore && (
-                                    <Box style={{ flex: 1 }} p="2">
-                                        <ActivityIndicator size="large" color="#ff4500" />
-                                    </Box>
-                                )}
-                            </Box>
-                        }
-                    />
-                )}
-            </Box>
+                                                </VStack>
+                                            </HStack>
+                                        </Box>
+                                    </TouchableOpacity>
+                                );
+                            }}
+                            onEndReached={({ distanceFromEnd }) => !this.state.isLoadingMore && this.loadMore()}
+                            onEndReachedThreshold={.3}
+                            scrollEventThrottle={150}
+                            ListFooterComponent={
+                                <Box style={{ flex: 1 }}>
+                                    {this.state.isLoadingMore && (
+                                        <Box style={{ flex: 1 }} p="2">
+                                            <ActivityIndicator size="large" color="#ff4500" />
+                                        </Box>
+                                    )}
+                                </Box>
+                            }
+                        />
+                    )}
+                </Box>
+            </NetworkStatus>
         );
     };
 };
