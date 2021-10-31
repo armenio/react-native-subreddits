@@ -199,6 +199,7 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
                                     activeOpacity={.7}
                                     onPress={() => {
                                         this.props.navigation.navigate('ReadShowScreen', {
+                                            id: item.id,
                                             url: item.url
                                         });
                                     }}
