@@ -64,7 +64,7 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
     public state: ReadIndexState = {
         isLoading: true,
         isRefreshing: false,
-        isLoadingMore: true,
+        isLoadingMore: false,
         type: 'top'
     };
 
@@ -88,7 +88,7 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
 
                 let result = { ...response.data };
 
-                if (this.state.result?.data?.children) {
+                if (this.state.isLoadingMore && this.state.result?.data?.children) {
                     result.data.children = [
                         ...this.state.result?.data?.children,
                         ...result.data.children
@@ -96,7 +96,10 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
                 }
 
                 this.setState({
-                    result
+                    result,
+                    isRefreshing: false,
+                    isLoading: false,
+                    isLoadingMore: false
                 });
             }).catch(async error => {
                 Toast.show({
@@ -104,17 +107,15 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
                     status: 'danger',
                     duration: 2500
                 });
-            }).finally(async () => {
-                await this.setState({
-                    isRefreshing: false,
-                    isLoading: false,
-                    isLoadingMore: false
-                });
             });
     }
 
     private loadMore = async () => {
-        if (this.state.isLoadingMore || this.state.isRefreshing) {
+        if (
+            this.state.isLoadingMore
+            || this.state.isRefreshing
+            || this.state.isLoading
+        ) {
             return;
         }
 
@@ -126,7 +127,11 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
     }
 
     private onRefresh = () => {
-        if (this.state.isLoadingMore || this.state.isRefreshing) {
+        if (
+            this.state.isLoadingMore
+            || this.state.isRefreshing
+            || this.state.isLoading
+        ) {
             return;
         }
 
@@ -308,7 +313,7 @@ class ReadIndexScreen extends React.Component<ReadIndexProps, ReadIndexState> {
                             }}
                             onEndReached={({ distanceFromEnd }) => !this.state.isLoadingMore && this.loadMore()}
                             onEndReachedThreshold={.1}
-                            scrollEventThrottle={150}
+                            scrollEventThrottle={16}
                             ListFooterComponent={
                                 <Box style={{ flex: 1 }}>
                                     {this.state.isLoadingMore && (
