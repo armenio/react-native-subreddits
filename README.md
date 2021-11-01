@@ -1,29 +1,38 @@
-# README #
+# Chiper React Native Coding Challenge
+URL: https://github.com/chiper-inc/React-Native-Coding-Challenge
 
-This README would normally document whatever steps are necessary to get your application up and running.
+#### IMPORTANT NOTES:
+* To get the application working, it assumes that you have the complete `React Native CLI` environment configured accordingly [The official React Native documentation](https://reactnative.dev/docs/environment-setup).
+* OAuth2 authentication not implemented.
 
-### What is this repository for? ###
+### Developed status
+Feature | Status
+--- | :---:
+Git repo | Implemented
+App Icon | Implemented
+Splash Screen | Implemented
+App Navigation | Implemented
+Network status check | Implemented
+Activity indicator | Implemented
+Content fetch | Implemented
+Pagination w/ infinite scroll | Implemented
+Content list refresh | Implemented
+Content view details | Implemented
+Automated tests | ~~Not implemented~~
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Setup
+```
+$ cd /path/to/react-native-subreddits
+$ npm install
+```
 
-### How do I get set up? ###
+### Running on iOS
+```
+$ npx pod-install
+$ npm run ios
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Running on Android
+```
+$ npm run android
+```
